@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:gp/ui/login/login_screen.dart';
+import 'package:gp/ui/login/widgets/login_screen.dart';
 
 import '../../style/reusable_components/CustomButton.dart';
 import '../../style/reusable_components/CustomTextFeild.dart';
@@ -30,7 +30,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
 
   final List<String> countries = [
     "Egypt", "USA", "Canada", "Germany", "France", "Brazil", "India", "China", "Japan", "Australia"
-    // Add more countries as needed
+
   ];
 
   final List<String> genders = ["Male", "Female"];

@@ -3,7 +3,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 
-import '../login/login_screen.dart';
+import '../login/widgets/login_screen.dart';
 
 class SplashScreen extends StatefulWidget {
   static const String routeName = "splash";
