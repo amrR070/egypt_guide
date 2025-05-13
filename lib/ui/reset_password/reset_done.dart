@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../style/reusable_components/CustomButton.dart';
-import '../login/login_screen.dart';
+import '../login/widgets/login_screen.dart';
 
 class ResetDone extends StatelessWidget {
   static const String routeName = "reset done";

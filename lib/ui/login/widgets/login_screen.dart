@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:gp/ui/questions/questions.dart';
-import '../../style/reusable_components/CustomButton.dart';
-import '../../style/reusable_components/CustomTextFeild.dart';
-import '../../validation.dart';
-import '../register/RegisterScreen.dart';
+import '../../../style/reusable_components/CustomButton.dart';
+import '../../../style/reusable_components/CustomTextFeild.dart';
+import '../../../validation.dart';
+import '../../register/RegisterScreen.dart';
 
 class LoginScreen extends StatefulWidget {
   static const routeName = "login";

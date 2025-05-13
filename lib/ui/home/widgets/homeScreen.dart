@@ -5,7 +5,7 @@ import 'package:gp/style/AppColors.dart';
 import '../tabs/category_tab.dart';
 import '../tabs/costum_prog_tab.dart';
 import '../tabs/Governorate_Tab/governorates_tab.dart';
-import '../tabs/All_Places_Tab/rating_tab.dart';
+import '../tabs/All_Places_Tab/allPlaces_tab.dart';
 class HomeScreen extends StatefulWidget {
   static const routeName = "home";
 
@@ -16,7 +16,7 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   int currentindex = 0;
   List<Widget> tabs = [
-    RatingTab(),
+    AllPlaces_Tab(),
     CategoryTab(),
     CostumProgTab(),
     GovernoratesTab(),

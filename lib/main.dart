@@ -6,7 +6,7 @@ import 'package:gp/ui/home/tabs/All_Places_Tab/All_Places_Details.dart';
 import 'package:gp/ui/home/tabs/Governorate_Tab/All_Governorate_places.dart';
 import 'package:gp/ui/home/tabs/Governorate_Tab/Governorat_Places_details.dart';
 import 'package:gp/ui/home/widgets/homeScreen.dart';
-import 'package:gp/ui/login/login_screen.dart';
+import 'package:gp/ui/login/widgets/login_screen.dart';
 import 'package:gp/ui/questions/questions.dart';
 import 'package:gp/ui/questions/questions_done.dart';
 import 'package:gp/ui/register/RegisterScreen.dart';
@@ -27,7 +27,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: AppStyle.lightTheme,
-      initialRoute: RegisterScreen.routeName,
+      initialRoute: HomeScreen.routeName,
       routes: {
         LoginScreen.routeName:(context) => LoginScreen(),
         RegisterScreen.routeName:(context) => RegisterScreen(),
