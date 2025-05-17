@@ -9,7 +9,9 @@ import 'package:gp/ui/home/widgets/homeScreen.dart';
 import 'package:gp/ui/login/widgets/login_screen.dart';
 import 'package:gp/ui/questions/questions.dart';
 import 'package:gp/ui/questions/questions_done.dart';
-import 'package:gp/ui/register/RegisterScreen.dart';
+import 'package:gp/ui/register/widgwts/ChooseRegestration.dart';
+import 'package:gp/ui/register/widgwts/RegisterUser.dart';
+import 'package:gp/ui/register/widgwts/TourGuideRegister.dart';
 import 'package:gp/ui/reset_password/reset_done.dart';
 import 'package:gp/ui/reset_password/reset_password.dart';
 import 'package:gp/ui/splash/splash_screen.dart';
@@ -27,21 +29,24 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: AppStyle.lightTheme,
-      initialRoute: HomeScreen.routeName,
+      initialRoute: Questions.routeName,
       routes: {
         LoginScreen.routeName:(context) => LoginScreen(),
-        RegisterScreen.routeName:(context) => RegisterScreen(),
+        RegisterUser.routeName:(context) => RegisterUser(),
+        TourGuideRegister.routeName:(context) => TourGuideRegister(),
+        ChooseRegistration.routeName:(context) => ChooseRegistration(),
         SplashScreen.routeName:(context) => SplashScreen(),
         ForgetPassword.routeName:(context) => ForgetPassword(),
         VerifyAccount.routeName:(context) => VerifyAccount(),
         ResetPassword.routeName:(context) => ResetPassword(),
         ResetDone.routeName:(context) => ResetDone(),
+        Questions.routeName:(context) => Questions(),
         QuestionsDone.routeName:(context) => QuestionsDone(),
         HomeScreen.routeName:(context) => HomeScreen(),
         AllPlacesDetails.routeName:(context) => AllPlacesDetails(),
         AllGovernoratePlaces.routeName:(context) => AllGovernoratePlaces(),
         GovernoratePlacesDetails.routeName:(context) => GovernoratePlacesDetails(),
-        Questions.routeName:(context) => Questions(),
+
 
       },
     );

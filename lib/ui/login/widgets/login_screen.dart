@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:gp/ui/questions/questions.dart';
+import 'package:gp/ui/register/widgwts/ChooseRegestration.dart';
 import '../../../style/reusable_components/CustomButton.dart';
 import '../../../style/reusable_components/CustomTextFeild.dart';
 import '../../../validation.dart';
-import '../../register/RegisterScreen.dart';
+import '../../register/widgwts/RegisterUser.dart';
 
 class LoginScreen extends StatefulWidget {
   static const routeName = "login";
@@ -118,22 +119,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     return null;
                   },
                 ),
-                // Align(
-                //   alignment: Alignment.centerRight,
-                //   child: TextButton(
-                //       onPressed: () {
-                //         Navigator.of(context).pushNamed(ForgetPassword.routeName);
-                //       },
-                //       child: Text(
-                //         "Forget Password",
-                //         style: TextStyle(
-                //           fontSize: 16,
-                //           fontWeight: FontWeight.w400,
-                //           color: Colors.white,
-                //         ),
-                //       )
-                //   ),
-                // ),
+
                 SizedBox(
                   height: height * 0.06,
                 ),
@@ -146,7 +132,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 ),
                 TextButton(
                     onPressed: () {
-                      Navigator.of(context).pushNamed(RegisterScreen.routeName);
+                      Navigator.of(context).pushNamed(ChooseRegistration.routeName);
                     },
                     child: Text(
                       "Don't have an account? Register",
